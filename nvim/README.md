@@ -1,4 +1,4 @@
-##Entorno de trabajo NVIM
+## Entorno de trabajo NVIM
 Hii, este es mi editor de codigo preferido, modificado con configuraciones y adaptaciones diseñadas para bridar la mayor productividad posible dentro de un entorno comodo y elegante.
 Este editor de codigo cuenta con:
 
