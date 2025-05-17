@@ -5,6 +5,7 @@ require('mason-lspconfig').setup({
 		'lua_ls',
 		'ts_ls',
 		'cssls',
+		"eslint"
 	}
 })
 
@@ -19,6 +20,7 @@ local lspconfig = require('lspconfig')
 
 --- LSP SERVERS SETUP
 lspconfig.lua_ls.setup {}
+lspconfig.eslint.setup {}
 
 lspconfig['html'].setup({
 	capabilities = capabilities,
@@ -124,4 +126,13 @@ cmp.setup ({
 	        winhighlight = "Normal:CmpNormal",
 	    }
 	}
+})
+
+-- diagnostic
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
 })

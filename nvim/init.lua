@@ -21,7 +21,7 @@ vim.cmd[[let g:astro_stylus = 'enable']]
 --
 
 require('nvim-highlight-colors').setup({
-	render = 'foreground',
+	render = 'background',
 enable_hex = true,
 
     	---Highlight short hex colors e.g. '#fff'

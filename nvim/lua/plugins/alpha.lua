@@ -42,10 +42,7 @@ local ascii = [[
 		end
 
 		dashboard.section.footer.val = {
-			centerText("Since 'magine' was a meme", 50),
-			" ",
-			-- centerText("NvimOnMy_Way❤️", 50),
-			-- " ",
+			centerText("Since 'imagine' was a meme", 50),
 			centerText(date, 50),
 			centerText(time, 50),
 			centerText(version, 50),
