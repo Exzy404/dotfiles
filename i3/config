@@ -25,6 +25,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons
 bindsym $mod+q kill
 bindsym $mod+Return exec kitty 
 
+#capturas
 set $cap_path "/home/exxy/assets/captures/$(date '+%s').png"
 
 bindsym $mod+Shift+s exec --no-startup-id maim --select $cap_path 
