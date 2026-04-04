@@ -1,5 +1,5 @@
 # There is no place like /root/
-!(Screenshot)[./screenshot.png]
+![Screenshot](./screenshot.png)
 
 ---
 ## Literally just LazyVim and i3wm default keymaps. **YES!**
