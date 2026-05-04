@@ -1,6 +1,6 @@
 # Custom TTY@1 Log In For systemd
 
-![alt text](path) 
+![tty login preview](./img.jpg) 
 
 # Archivos involucrados
 
