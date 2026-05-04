@@ -13,11 +13,11 @@ exec_always --no-startup-id feh --bg-fill ~/assets/wallpaper.png
 exec --no-startup-id polybar
 exec_always --no-startup-id picom --daemon
 
-gaps inner 18
-gaps outer 6
+gaps inner 12
+gaps outer 1
 
 #tilin modifierrk
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 3 
 floating_modifier $mod
 
 #atajo

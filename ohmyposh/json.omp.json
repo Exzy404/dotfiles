@@ -27,7 +27,13 @@
           "style": "diamond",
           "template": "<#fff> \uf303 </>",
           "type": "text"
-        }
+        },
+        {
+  "type": "text",
+  "style": "plain",
+  "foreground": "#00FF00",
+  "template": "{{ if .Env.VIRTUAL_ENV }}( {{ .Env.VIRTUAL_ENV | base }} ){{ end }}"
+}
       ],
       "type": "prompt"
     },
