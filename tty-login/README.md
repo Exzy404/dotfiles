@@ -51,6 +51,17 @@ sudo usermod -aG autologin $USER
 ExecStart=-/bin/bash -c 'setterm -clear all; /usr/local/bin/tty-greeter; exec /sbin/agetty --noclear %I $TERM'
 ```
 
+6. Modifica .bash_profile
+Añade esta linea de codigo para que cada vez que se inicie sesion dentro de tty1 se ejecute ligthdm y muestre nuestra interfaz grafica.
+
+```bash
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+
+  exec sudo systemctl start lightdm
+fi
+```
 
 # Desinstalar
 
