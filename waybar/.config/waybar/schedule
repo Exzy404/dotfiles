@@ -1,0 +1,14 @@
+.                   | Do                  | onHover                 | onClick
+--------------------------------------------------------------------
+current window      | show focused window |     -                     -
+Workspaces          | show few workspaces |     -                   | move to workspace, lol
+
+
+CPU                 | show icon           | show CPU porcentage     | -
+RAM                 | show icon           | show Ram porcentage     | -
+DISK                | show icon           | show disk porcentage    | -
+
+Audio / Media       | show curret volume  | Show current output     | pavucontrol
+Internet            | show connection ico | Show SSID and IP        | kitty nmcli
+Time                  -                         -
+Tray                  -                         -
