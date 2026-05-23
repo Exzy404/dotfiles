@@ -28,7 +28,7 @@ return {
         ---@type snacks.dashboard.Item[]
         keys = {
           { icon = " ", key = "c", desc = "Nvim Config", action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})" },
-          { icon = " ", key = "i", desc = "Dotfiles", action = ":Explore /home/exxy/.config/" },
+          { icon = " ", key = "d", desc = "Dotfiles", action = ":Explore /home/exxy/dotfiles/" },
           { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
           { icon = " ", key = "f", desc = "Buscar Archivo", action = ":lua Snacks.dashboard.pick('files')" },
           { icon = " ", key = "n", desc = "Nuevo Archivo", action = ":ene | startinsert" },

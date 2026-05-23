@@ -1,11 +1,24 @@
 # Custom TTY@1 Log In For systemd
 
-![tty login preview](./img.jpg) 
+![tty login preview](../../assets/tty-login-header.jpg) 
 
 # Archivos involucrados
 
 - `/usr/lib/systemd/system/getty@.service` Archivo de configuracion getty@.service 
 - `/usr/local/bin/tty-greeter` Script que mostrara el banner/header ascii de tu eleccion
+- `/etc/issue` Header para mostrar
+
+
+# ¿Solo buscas mostrar un header?
+- Modificando el archivo `/etc/issue` podemos simplemene añadir el arte ascii que deseemos mostrar encima de nuestro login tty.
+
+```bash
+# Coloca tu arte ascii (preferiblemente no BRAILE si usas tty) en la parte superior del archivo.
+
+\S{PRETTY_NAME} \r (\l) # No debajo de esto, tampoco lo reemplaces si no sabes lo que estas haciendo
+```
+
+- Revisa el proceso de abajo si deseas mostrar datos estilo `neofetch` o `fastfetch` o cualquier cosa que implique algun tipo de comando.
 
 # ¿Como instalar?
 
