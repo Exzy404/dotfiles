@@ -13,7 +13,7 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -- util software
 Terminal = "kitty"
 FileManager = "Thunar"
-Menu = "rofi -show drun"
+Menu = "rofi"
 MainMod = "SUPER" -- Sets "Windows" key as main modifier
 ---------------------------------------------------------------
 

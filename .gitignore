@@ -1,3 +1,7 @@
 *.log
 .cache/
+.env
 node_modules
+lazy-lock.json
+lazyvim.json
+stylua.toml

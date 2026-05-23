@@ -31,7 +31,7 @@ map("s", hl.dsp.layout("togglesplit"))
 
 -- execute / run
 map("Return", hl.dsp.exec_cmd(Terminal), { submap_universal = true })
-map("d", hl.dsp.exec_cmd(Menu))
+map("d", hl.dsp.exec_cmd(Menu .. "  -show drun -show-icons"))
 
 hl.bind("Print", hl.dsp.exec_cmd("grim ~/Imágenes/$(date +'%Y-%m-%d_%H-%M-%S').png"))
 hl.bind("SUPER + Print", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
