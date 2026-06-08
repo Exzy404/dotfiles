@@ -189,6 +189,7 @@ tooltip label {
     color: @foreground;
 }
 
+#custom-airplane_mode,
 #custom-erick {
 margin-right: 10px;
 margin-left: 10px;

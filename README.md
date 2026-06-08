@@ -43,7 +43,7 @@ Hyprland dotfiles. Wayland-only setup, managed with stow.
 
 ```md
 .config/
-├── hypr # compositor config on lua
+├── hypr
 │   ├── config 
 │   │   ├── animations.lua
 │   │   ├── autostart.lua
@@ -58,7 +58,7 @@ Hyprland dotfiles. Wayland-only setup, managed with stow.
 │   └── kitty.conf
 ├── nvim # Using LazyVim
 │   ├── init.lua
-│   ├── lua # (with lua tho)
+│   ├── lua
 │   │   ├── config
 │   │   │   ├── autocmds.lua
 │   │   │   ├── keymaps.lua
@@ -73,9 +73,7 @@ Hyprland dotfiles. Wayland-only setup, managed with stow.
 │   └── tty-greter.sh
 └── waybar # "Eww, why does it look like that" ahh top bar
     ├── config.jsonc
-    ├── style.css
-    └── scripts 
-        └── airplane-mode.sh 
+    └── style.css 
 ```
 
 ## Install
