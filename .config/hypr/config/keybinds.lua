@@ -33,8 +33,8 @@ map("s", hl.dsp.layout("togglesplit"))
 map("Return", hl.dsp.exec_cmd(Terminal), { submap_universal = true })
 map("d", hl.dsp.exec_cmd(Menu .. "  -show drun -show-icons"))
 
-hl.bind("Print", hl.dsp.exec_cmd("grim ~/Imágenes/$(date +'%Y-%m-%d_%H-%M-%S').png"))
-hl.bind("SUPER + Print", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
+map("Print", hl.dsp.exec_cmd("grim ~/Imágenes/captures/$(date +'%Y-%m-%d_%H-%M-%S').png"))
+map("SHIFT+S", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
 
 -- Workspaces
 for i = 1, 10 do
