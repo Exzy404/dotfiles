@@ -15,7 +15,8 @@
   },
 
   "display": {
-    "separator": ": ",
+    "key":{ "type":"icon"},
+    "separator": " ~ ",
     "color": {
       "keys": "#f0ddbb",
       "logo": "#f0ddbb",
@@ -24,47 +25,128 @@
   },
 
   "modules": [
-    "title",
+    {
+      "type": "title",
+      "key": " ",
+      "keyIcon": "",
+      "fqdn": false,
+      "color": {
+        "user": "",
+        "at": "",
+        "host": ""
+      }
+    },
+    {
+      "type": "separator",
+      "string": "-",
+      "outputColor": "",
+      "times": 0
+    },
     {
       "type": "os",
-      "key": " "
+      "keyIcon": ""
     },
-
     {
       "type": "host",
-      "key": " "
+      "keyIcon": "󰌢"
     },
-
     {
       "type": "kernel",
-      "key": " "
+      "keyIcon": ""
     },
-
-{
-  "type": "wm",
-  "key": " "
-},
-{
-  "type": "terminal",
-  "key": " "
-},
-{
-  "type": "shell",
-  "key": " "
-},
     {
       "type": "uptime",
-      "key": " "
+      "keyIcon": ""
     },
-
     {
       "type": "packages",
-      "key": " "
+      "keyIcon": "󰏖",
+      "disabled": [
+        "apk"
+      ],
+      "combined": false
     },
-
-{
-  "type": "display",
-  "key": "󰍹 "
-},
+    {
+      "type": "shell",
+      "keyIcon": ""
+    },
+    {
+      "type": "de",
+      "keyIcon": ""
+    },
+    {
+      "type": "wm",
+      "keyIcon": "",
+      "detectPlugin": true
+    },
+    {
+      "type": "wmtheme",
+      "keyIcon": "󰓸"
+    },
+    {
+      "type": "theme",
+      "keyIcon": "󰉼"
+    },
+    {
+      "type": "icons",
+      "keyIcon": ""
+    },
+    {
+      "type": "cursor",
+      "keyIcon": "󰆿"
+    },
+    {
+      "type": "terminal",
+      "keyIcon": ""
+    },
+    {
+      "type": "cpu",
+      "keyIcon": "",
+      "temp": false,
+      "showPeCoreCount": false,
+      "tempSensor": ""
+    },
+    {
+      "type": "memory",
+      "keyIcon": "",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0
+      }
+    },
+    {
+      "type": "disk",
+      "keyIcon": "",
+      "showRegular": true,
+      "showExternal": true,
+      "showHidden": false,
+      "showSubvolumes": false,
+      "showReadOnly": true,
+      "showUnknown": false,
+      "folders": "",
+      "hideFolders": "/efi:/boot:/boot/*",
+      "hideFS": "",
+      "useAvailable": false,
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0
+      }
+    },
+    {
+      "type": "battery",
+      "keyIcon": "",
+      "temp": false,
+      "percent": {
+        "green": 50,
+        "yellow": 20,
+        "type": 0
+      }
+    },
+    {
+      "type": "poweradapter",
+      "keyIcon": "󰚥"
+    },
   ]
 }
